@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+    
+    }
+    .box{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height: 90vh;
+    }
+    .container{
+        width:350px;
+        display:flex;
+        flex-direction:column;
+        padding: 0 15px 0 15px;
+    }
+    span{
+        color:orangered;
+        font-size :50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display:flex;
+        justify-content: center;
+        padding:10px 0 10px 0;
+    }
+    header{
+        font-size:30px;
+        color:black;
+        display:fex;
+        justify-content: center;
+        padding:10px 0 10px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .input{
+        color:grey;
+        height:45px;
+        width:87%;
+        border:none;
+        color:grey;
+        border-radius:30px ;
+         padding:0 0 0 45px;
+        background: rgba(191, 188, 188, 0.1);
+
+    }
+    i{
+        position:relative;
+        top: -33px;
+        left: 17px;
+        color:grey;
+
+    }
+    ::-webkit-input-placeholder{
+        color:black;
+    }
+    .submit{
+        border:none;
+        border-radius: 30px;
+        font-size: 15px;
+        height:45px;
+        color:white;
+        outline:none;
+        background: orangered;
+        transition:.3s;
+        width:100%
+        
+    }
+    .sub{
+        border:none;
+        color:grey;
+        border-radius: 30px;
+        font-size: 15px;
+        height:45px;
+        outline:none;
+        background: rgba(191, 188, 188, 0.1);
+        transition:.3s;
+        width:100%
+
+    }
+    .submit:hover{
+        box-shadow:1px 5px 7px 1px rgba(0,0,0,0.2);
+    }
+    .or{
+        text-align: center;
+        margin: 10px 10px 10px 10px;
+    }
+    .sub:hover{
+        box-shadow:1px 5px 7px 1px rgba(0,0,0,0.2);
+    }
+   </style>
+    <title>Document</title>
+</head>
+<body bgcolor="white">
+    <div class="box"> 
+        <div class="container">
+            <div class="top-header">
+                <span>infollion</span>
+                <header>Login to Dashboard</header>
+
+            </div>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Email/username" required>
+                <i class="bi bi-envelope"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="password" class="input" placeholder="password" required>
+                <i class="bi bi-file-lock"></i>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Log in">
+            </div>
+            <div class="or">
+                OR
+            </div>
+            <div class="input-field">
+                <input type="submit" class="sub" value="Log in with OTP">
+
+            </div>
+           
+
+ 
+
+        </div>
+    </div>
+
+</body>
+</html>
